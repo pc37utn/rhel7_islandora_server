@@ -7,6 +7,8 @@ echo "Installing Apache and PHP for a RHEL 7 server."
 if [ -f "$SHARED_DIR/configs/variables" ]; then
   . "$SHARED_DIR"/configs/variables
 fi
+# add apache server and mod_ssl
+yum -y install httpd mod_ssl httpd-tools
 
 # put the islandora user into the apache group
 usermod -a -G apache islandora
