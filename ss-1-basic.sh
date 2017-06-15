@@ -51,10 +51,10 @@ else
 fi
 
 # Maven
-apt-get -y install maven
+yum -y install maven
 
 # Tomcat
-apt-get -y install tomcat tomcat-admin-webapps
+yum -y install tomcat tomcat-admin-webapps
 
 echo "****** Basic Stage 1 of server install is finished.*******"
 echo " "
