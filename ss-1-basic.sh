@@ -47,7 +47,7 @@ if [$OS = "centos"]; then
   export JAVA_HOME
 else
   #------------------ if RHEL 7
-  yum -y java-1.8.0-oracle  java-1.8.0-oracle-devel
+  yum -y install java-1.8.0-oracle  java-1.8.0-oracle-devel
 fi
 
 # Maven
