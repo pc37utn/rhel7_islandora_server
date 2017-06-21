@@ -2,7 +2,7 @@
 
 #SHARED_DIR="/home/islandora/setup"
 DOWNLOAD_DIR="/home/islandora/setup/downloads"
-FITS_VERSION=1.0.6
+FITS_VERSION=1.1.1
 SOLR_VERSION=4.2.0
 
 # fedora db creation 
