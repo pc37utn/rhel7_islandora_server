@@ -15,7 +15,7 @@ fi
 chown islandora:islandora "$FITS_HOME"
 
 # Download and deploy FITS
-wget -q -O "$DOWNLOAD_DIR/fits-$FITS_VERSION.zip" "http://projects.iq.harvard.edu/files/fits/files/fits-$FITS_VERSION.zip"
+wget -q -O "$DOWNLOAD_DIR/fits-$FITS_VERSION.zip" "https://projects.iq.harvard.edu/files/fits/files/fits-$FITS_VERSION.zip"
 
 unzip "$DOWNLOAD_DIR/fits-$FITS_VERSION.zip" -d "$FITS_HOME"
 cd "$FITS_HOME/fits-$FITS_VERSION"
