@@ -24,7 +24,7 @@ cd "$FITS_HOME/fits"
 chmod +x fits.sh
 chmod +x fits-env.sh
 
-#echo "Installing Tesseract"
+echo "Installing Tesseract"
 
-#yum -y install tesseract tesseact-osd tesseract-langpack-fra
+yum -y install tesseract tesseact-osd tesseract-langpack-fra
 
