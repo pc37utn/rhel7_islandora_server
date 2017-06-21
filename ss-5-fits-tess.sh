@@ -1,12 +1,12 @@
 #!/bin/bash
 
 echo "Installing FITS"
-SHARED_DIR=/home/islandora/setup
+export SHARED_DIR=/home/islandora/setup
 # setup config-only env variables
 if [ -f "$SHARED_DIR/configs/variables" ]; then
   . "$SHARED_DIR"/configs/variables
 fi
-#FITS_HOME=/vhosts/fits
+export FITS_HOME=/vhosts/fits
 
 # Setup FITS_HOME
 if [ ! -d "$FITS_HOME" ]; then
