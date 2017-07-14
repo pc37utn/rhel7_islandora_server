@@ -12,8 +12,9 @@ echo "Installing MySQl and Drupal."
 yum -y mariadb mariadb-server php-mysql
 # set root user pass to $MYSQLROOT
 
+ cd /vhosts
 # Download Drupal
-drush dl drupal --drupal-project-rename=drupal
+drush dl drupal-7.x --drupal-project-rename=drupal
 
 # Permissions
 chown -R apache:apache drupal
@@ -24,11 +25,6 @@ cd drupal || exit
 drush si -y --db-url=mysql://root:$MYSQLROOT@localhost/drupal7 --site-name=drupal
 drush user-password admin --password=$ADMINPASS
 
-# Enable proxy module
-#ln -s /etc/apache2/mods-available/proxy.load /etc/apache2/mods-enabled/proxy.load
-#ln -s /etc/apache2/mods-available/proxy_http.load /etc/apache2/mods-enabled/proxy_http.load
-#ln -s /etc/apache2/mods-available/proxy_html.load /etc/apache2/mods-enabled/proxy_html.load
-#ln -s /etc/apache2/mods-available/headers.load /etc/apache2/mods-enabled/headers.load
 
 # Set document root
 #sed -i "s|DocumentRoot /vhosts/html$|DocumentRoot $DRUPAL_HOME|" $APACHE_CONFIG_FILE
