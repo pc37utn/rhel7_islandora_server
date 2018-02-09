@@ -24,7 +24,7 @@ usermod -a -G web tomcat
 
 # Drush and drupal deps
 yum -y install php-gd php-devel php-xml php-soap php-curl
-yum -y install php-pecl-imagick ImageMagick perl-Image-Exiftool bibutils poppler-utils
+yum -y install php-pecl-imagick ImageMagick perl-Image-ExifTool bibutils poppler-utils
 pecl install uploadprogress
 sed -i '/; extension_dir = "ext"/ a\ extension=uploadprogress.so' /etc/php.ini
 # drush from rhel
