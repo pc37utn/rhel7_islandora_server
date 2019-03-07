@@ -23,7 +23,7 @@ mv "$FITS_HOME/fits-$FITS_VERSION" "$FITS_HOME/fits"
 cd "$FITS_HOME/fits"
 chmod +x fits.sh
 chmod +x fits-env.sh
-
+chown apache.apache "$FITS_HOME/fits"
 echo "Installing Tesseract"
 
 yum -y install tesseract tesseact-osd tesseract-langpack-fra
