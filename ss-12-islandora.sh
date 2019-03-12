@@ -98,4 +98,4 @@ git clone git://github.com/Islandora/islandora_bagit
 git clone git://github.com/Islandora/islandora_usage_stats
 
 #- discoverygarden islandora_binary_object
-#git clone git://github.com/discoverygarden/islandora_binary_object
+git clone git://github.com/Islandora-Labs/islandora_binary_object
